@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>LB02 von Tim & Robin</title>
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link rel="shortcut icon" href="images/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #264653;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" style="width: 40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="notenschnitt.html">Notenschnitt berechnen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <h1 class="startseite-header">Notenschnitt berechnen</h1>
+        </header>
+        <div class="untertitel-text">
+            <p class="beschreibungs-text">
+                Um deinen Schnitt zu erfahren, gib jeweils links die Note und rechts die Gewichtung ein.
+                Wenn du Gewichtungen verwenden möchtest, gebe sie folgermassen ein: zB. 0.5 oder 2<br>
+                Falls keine spezielle Gewichtung gegeben ist, kannst du dieses Feld auch leer lassen,
+                es müssen jedoch immer links 3 Noten verwendet werden.
+            </p>
+        </div>
+
+        <div id="rechner" class="rechner-feld">
+            <form style="margin-top: 50px; width: 500px">
+               <h2 class="noten"><label>Note 1</label></h2>
+                <div class="notennn">
+                <label class="gewichtung"> Note:</label>
+                    <input id="note-1">
+
+                    <div class="notenrechner">
+                    <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-1"><br>
+                    </div>
+                    </div>
+
+
+
+                    <h2 class="noten"> <label>Note 2</label></h2>
+                    <div class="notennn">
+                    <label class="gewichtung"> Note:</label>
+                        <input id="note-2">
+
+                        <div class="notenrechner">
+                    <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-2"><br>
+                    </div>
+                    </div>
+
+
+                    <h2 class="noten"><label>Note 3 </label></h2>
+                    <div class="notennn">
+                    <label class="gewichtung"> Note:</label>
+                        <input id="note-3">
+
+                        <div class="notenrechner">
+                    <label class="gewichtung_0">Gewichtung:</label>
+                        <input id="gewichtung-3"> <br>
+                    </div>
+                    </div>
+            </form>
+        </div>
+        <span class="button-span">
+            <button onclick="note_berechnen()" class="rechner-button btn btn-primary">Berechnen</button>
+        </span>
+    </main>
+ <p class="beschreibungs-text" id="resultat">Dein Schnitt ist:</p>
+<script src="js/notenrechner.js"></script>
+
+    <footer class="footer">
+        <a class="footer-a" href="mailto:contact@robinneher.ch">Contact Robin</a>
+        <a class="footer-a" href="mailto:federspielt@bzz.ch">Contact Tim</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+body{
+    font-family: comfortaa;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #264653;
+    height: 50px;
+
+}
+.video-h3{
+    text-align: center;
+    width: 1000px;
+    font-size: 25px;
+}
+a.footer-a{
+    color: white;
+    font-size: 16px;
+    font-family: comfortaa, light;
+    text-decoration: none;
+}
+a.footer-a:hover{
+    color: #e76f51;
+    text-decoration: underline;
+    text-underline: #e76f51;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    border-bottom: black    solid   1px;
+}
+h1{
+    color: #2a9d8f;
+}
+h2{
+    color: #e76f51;
+    font-family: comfortaa, bold;
+    padding-bottom: 20px;
+}
+
+.noten{
+    color: #e76f51;
+    font-family: comfortaa, bold;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+h3{
+    color: #2a9d8f;
+    font-family: comfortaa, regular;
+    font-size: 12pt;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 50pt;
+}
+
+.picture {
+    height: 500px;
+    width: 500px;
+    padding-bottom: 30px;
+}
+
+.startseite-header{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+    font-size: 50px;
+    font-family: comfortaa;
+}
+
+.untertitel{
+    display: flex;
+    justify-content: center;
+    font-family: comfortaa;
+    margin: 0px 0px 40px 0px;
+    color: #e76f51;
+}
+
+.beschreibungs-text{
+    text-align: center;
+    width: 1000px;
+ }
+
+ .untertitel-text{
+     display: flex;
+     justify-content: center;
+     margin: 30px 0px 30px 0px;
+ }
+/* alli 4 carousel */
+.carousel-item{
+    height: 650px;
+    background-color: black;
+    color:white;
+}
+.overlay-image{
+    opacity: 0.6;
+    background-size: cover;
+}
+
+.carousel {
+    width: 1500px;
+    height: 650px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.carousel-text{
+    color: white;
+    font-family: comfortaa;
+}
+
+
+.doku-video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+.video-h3{
+    margin-bottom: 30px;
+}
+video{
+    width: 80%;
+}
+/*nav*/
+.navbar{
+    color: #0b5ed7;
+}
+
+
+.gewichtung{
+    margin-right: 20px;
+}
+.gewichtung_0{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.gewichtung-2{
+    margin-right: 20px;
+}
+
+.gewichtung-3{
+    margin-right: 20px;
+}
+
+
+
+.notennn {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/********** Bilder Hover fancy **********/
+
+.bild {
+
+}
+
+
+.bilder {
+    width: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 0px;
+}
+
+.bilder .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bilder .box .imgbox {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    size: 50vw;
+}
+
+.bilder .box .imgbox img {
+    max-height: 100%;
+    transition: transform 2s;
+}
+
+.bilder .box:hover .imgbox img {
+    transform: scale(1.2);
+}
+
+.bilder .box .details {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    transform: scaleY(0);
+    transition: transform 0.5s;
+}
+
+.bilder .box:hover .details {
+    transform: scaleY(1);
+    text-decoration: none;
+}
+
+.bilder .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bilder .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.bilder .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.medienkompetenz {
+    font-family: comfortaa, regular;
+    margin: 0;
+    padding: 0;
+    font-size: 100pt;
+    text-decoration: none;
+}
+
+
+
+.overall {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.person {
+    margin-top: 50px;
+}
+
+.main_about {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.div_picture {
+    margin-left: 50px;
+}
+.rechner-feld{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button-span{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.notenrechner {
+    display: flex;
+    flex-direction: row;
+}
+
